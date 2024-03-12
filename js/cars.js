@@ -87,6 +87,20 @@ class Ferrari extends Lambourgini{
          }
     }
 
-    export{Lambourgini,Porsche, Ferrari};        
+    class Bentley extends Lambourgini{
+        constructor( 
+            make, 
+            model,
+             year,
+             colour,
+             image){
+                super( make, 
+                    model,
+                     year,
+                     colour,
+                     image)
+             }
+    }
+    export{Lambourgini,Porsche, Ferrari, Bentley};        
         
 

@@ -1,4 +1,4 @@
-import {Lambourgini, Porsche, Ferrari} from "./cars.js";
+import {Lambourgini, Porsche, Ferrari, Bentley} from "./cars.js";
 
 const porsche= new Porsche(
     "Porsche", 
@@ -15,16 +15,24 @@ const lambo= new Lambourgini(
     "img/lambo.jpeg"
 );
 const ferrari = new Ferrari(
-    'Ferrari', 
-    '488 GTB', 
+    "Ferrari", 
+    "488 GTB", 
     2018,
     "blue",
     "img/ferrari.jpeg"
 )
+const bentley = new Bentley(
+    "Bentley",
+    "Flying Spur",
+    2024,
+    "orange"
+    
+)
 lambo.titleLink();
 ferrari.titleLink();
 porsche.titleLink();
+bentley.titleLink();
 
-console.log(lambo);
-console.log(ferrari);
-console.log(porsche);
+//console.log(lambo);
+//console.log(ferrari);
+//console.log(porsche);
