@@ -11,6 +11,22 @@ class Car {
         this.colour=colour;
         this.image=image;
          }    
+
+         titleLink(){
+            const nameCont = document.querySelector("#names");
+            const ul = document.createElement("ul");
+            const make = document.createElement("li");
+               
+            make.textContent= `${this.make}`;
+                
+            nameCont.appendChild(ul);
+            ul.appendChild(make);
+
+            make.addEventListener('click',this.displayDetails)
+            //is there a way to integrate an event listener for display details and titleLink?
+            
+        }
+
          displayDetails() {
             const container= document.querySelector("#container");
             const ul = document.createElement("ul");
@@ -28,7 +44,7 @@ class Car {
                 ul.appendChild(year);
                 ul.appendChild(colour);
         
-                container.innerHTML = ''; // Clear container
+                container.innerHTML = ''; 
                 container.appendChild(ul);
                 
                  carImage.src = this.image;

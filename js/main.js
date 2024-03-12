@@ -21,7 +21,10 @@ const ferrari = new Ferrari(
     "blue",
     "img/ferrari.jpeg"
 )
+theeCar.titleLink();
+ferrari.titleLink();
+porsche.titleLink();
 
-theeCar.displayDetails();
-ferrari.displayDetails();
-porsche.displayDetails();
+console.log(theeCar);
+console.log(ferrari);
+console.log(porsche);
