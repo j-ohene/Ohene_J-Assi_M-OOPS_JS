@@ -1,4 +1,4 @@
-class Car {
+class Lambourgini {
     constructor(
         make, 
         model,
@@ -22,8 +22,12 @@ class Car {
             nameCont.appendChild(ul);
             ul.appendChild(make);
 
-            make.addEventListener('click',this.displayDetails)
-            //is there a way to integrate an event listener for display details and titleLink?
+            
+            //consulted youtube
+            make.addEventListener('click',()=>{
+                this.displayDetails();
+            })
+            //is there a way to integrate an event litener for display details and titleLink?
             
         }
 
@@ -52,7 +56,7 @@ class Car {
                 
             }
         }
-        class Porsche extends Car {
+        class Porsche extends Lambourgini {
         constructor( 
         make, 
         model,
@@ -68,7 +72,7 @@ class Car {
                 
                 }
 
-class Ferrari extends Car{
+class Ferrari extends Lambourgini{
     constructor( 
         make, 
         model,
@@ -83,6 +87,6 @@ class Ferrari extends Car{
          }
     }
 
-    export{Car,Porsche, Ferrari};        
+    export{Lambourgini,Porsche, Ferrari};        
         
 
