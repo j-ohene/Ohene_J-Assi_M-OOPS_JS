@@ -35,7 +35,38 @@ class Car {
                  container.appendChild(carImage);
                 
             }
-        
-        
         }
+        class Porsche extends Car {
+        constructor( 
+        make, 
+        model,
+        year,
+        colour,
+        image){
+        super( make, 
+            model,
+            year,
+            colour,
+            image)
+                }
+                
+                }
+
+class Ferrari extends Car{
+    constructor( 
+        make, 
+        model,
+         year,
+         colour,
+         image){
+            super( make, 
+                model,
+                 year,
+                 colour,
+                 image)
+         }
+    }
+
+    export{Car,Porsche, Ferrari};        
+        
 
