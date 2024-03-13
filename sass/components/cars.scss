@@ -1,0 +1,103 @@
+// Variables 
+$font-main: 'Arial';
+$text-color: #ffffff;
+$background-color: linear-gradient(89.7deg, rgb(40, 49, 91) 2.8%, rgb(58, 81, 152) 97.8%);
+$background-hover-color: linear-gradient(89.7deg, rgb(109, 120, 172) 2.8%, rgb(80, 106, 185) 97.8%);
+$loading-color: #f8f9fa;
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#20242a, #233447);
+}
+
+.grid-con {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+#names {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    background: linear-gradient(89.7deg, rgb(40, 49, 91) 2.8%, rgb(58, 81, 152) 97.8%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    p {
+        color: white;
+        text-align: center;
+        margin: 0;
+        font-size: 18px;
+        text-shadow: #233447;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            color: white;
+            align-items: center;
+            cursor: pointer;
+            padding: 20px 50px;
+            background: linear-gradient(89.7deg, rgb(109, 120, 172) 2.8%, rgb(80, 106, 185) 97.8%);
+            border-radius: 5px;
+            margin-bottom: 5px;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: transform 0.3s ease-in-out;
+                background-color: linear-gradient(89.7deg, rgb(82, 102, 198) 2.8%, rgb(55, 79, 148) 97.8%);
+            }
+        }
+    }
+}
+
+#container {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    color: white;
+    background: linear-gradient(89.7deg, rgb(40, 49, 91) 2.8%, rgb(58, 81, 152) 97.8%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+    }
+
+    p {
+        color: white;
+        text-align: center;
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+#carImage {
+    width: 300px;
+    border-radius: 8px;
+
+    @media screen and (min-width: 768px),
+    screen and (min-width: 1920px) {
+        width: 600px;
+        border-radius: 8px;
+    }
+}
