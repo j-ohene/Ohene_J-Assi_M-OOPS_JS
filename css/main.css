@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#20242a, #233447);
+}
+
+.grid-con {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+#names {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    /* display: flex; */
+    /* background-color: #fff; */
+    background: linear-gradient(89.7deg, rgb(40, 49, 91) 2.8%, rgb(58, 81, 152) 97.8%);
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#names p {
+
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+}
+
+#names ul {
+
+    list-style-type: none;
+}
+
+#names ul li {
+
+    color: white;
+    align-items: center;
+    /* width: 400px;
+    height: 50px; */
+    cursor: pointer;
+    padding: 20px 50px;
+    background: linear-gradient(89.7deg, rgb(109, 120, 172) 2.8%, rgb(80, 106, 185) 97.8%);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#names ul li:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    background-color: linear-gradient(89.7deg, rgb(82, 102, 198) 2.8%, rgb(55, 79, 148) 97.8%);
+}
+
+#container {
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    color: white;
+    background: linear-gradient(89.7deg, rgb(40, 49, 91) 2.8%, rgb(58, 81, 152) 97.8%);
+    /* background: linear-gradient(89.7deg, rgb(66, 70, 99) 2.8%, rgb(57, 75, 128) 97.8%); */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#container ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#container p {
+
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+}
