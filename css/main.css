@@ -19,8 +19,6 @@ body {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    /* display: flex; */
-    /* background-color: #fff; */
     background: linear-gradient(89.7deg, rgb(40, 49, 91) 2.8%, rgb(58, 81, 152) 97.8%);
 
     padding: 20px;
@@ -34,6 +32,9 @@ body {
     text-align: center;
     margin: 0;
     font-size: 18px;
+    text-shadow: #233447;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 #names ul {
@@ -45,8 +46,6 @@ body {
 
     color: white;
     align-items: center;
-    /* width: 400px;
-    height: 50px; */
     cursor: pointer;
     padding: 20px 50px;
     background: linear-gradient(89.7deg, rgb(109, 120, 172) 2.8%, rgb(80, 106, 185) 97.8%);
@@ -61,12 +60,12 @@ body {
 }
 
 #container {
+    width: 100%;
     text-align: center;
     align-items: center;
     margin-top: 30px;
     color: white;
     background: linear-gradient(89.7deg, rgb(40, 49, 91) 2.8%, rgb(58, 81, 152) 97.8%);
-    /* background: linear-gradient(89.7deg, rgb(66, 70, 99) 2.8%, rgb(57, 75, 128) 97.8%); */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -88,4 +87,54 @@ body {
     text-align: center;
     margin: 0;
     font-size: 18px;
+}
+
+#carImage {
+    width: 300px;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    #carImage {
+        width: 600px;
+        border-radius: 8px;
+    }
+
+    #names {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        background: linear-gradient(89.7deg, rgb(40, 49, 91) 2.8%, rgb(58, 81, 152) 97.8%);
+
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+
+    #carImage {
+        width: 600px;
+        border-radius: 8px;
+    }
+
+    #names {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        background: linear-gradient(89.7deg, rgb(40, 49, 91) 2.8%, rgb(58, 81, 152) 97.8%);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 }
